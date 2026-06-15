@@ -15,12 +15,40 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
     line-height: 1.6;
+    padding-top: 70px;
 }
 nav {
-    background-color: var(--color-blanco);
-    padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-blanco);       /* ¿qué color de tu paleta? */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    z-index: 100;
 }
+
+nav ul {
+    display: flex;
+    gap: 16px;                    /* espacio entre links */
+    list-style: none;              /* quita los bullets */
+}
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 section {
     max-width: 800px;        /* ancho máximo del contenido, piensa 700-900 */
     margin-inline: auto;     /* centra horizontalmente */
