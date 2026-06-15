@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-fondo: #FAFAFA;      /* 60% - fondo principal */
+    --color-texto: #1E293B;      /* 30% - texto y elementos secundarios */
+    --color-acento: #0077B6;     /* 10% - links, botones, destacados */
+    --color-blanco: #FFFFFF;     /* tarjetas sobre el fondo */
+    --font-family: 'Inter', sans-serif;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+nav {
+    background-color: var(--color-blanco);
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+section {
+    max-width: 800px;        /* ancho máximo del contenido, piensa 700-900 */
+    margin-inline: auto;     /* centra horizontalmente */
+    padding: 20px 20px;       /* espacio arriba/abajo y a los lados */
+}
