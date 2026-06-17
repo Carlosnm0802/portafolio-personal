@@ -58,7 +58,8 @@ section {
     width: 180px;           /* tamaño del círculo, piensa 150-200px */
     height: 180px;          /* DEBE ser igual al width para que sea círculo perfecto */
     border-radius: 50%;     /* ¿qué valor convierte un cuadrado en círculo? */
-    object-fit: cover;      /* evita que la imagen se deforme */
+    object-fit: cover;  
+    object-position: center top;    /* evita que la imagen se deforme */
 }
 #hero {
     display: flex;
@@ -156,6 +157,34 @@ section h2 {
     font-weight: 500;
     background-color: var(--color-acento);
     color: var(--color-blanco);
+}
+#formacion h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-acento);
+    margin: 16px 0 8px;
+}
+
+#formacion p {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+#formacion .lista-certificaciones {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+#formacion .lista-certificaciones li {
+    padding: 8px 14px;
+    background-color: var(--color-blanco);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border-left: 3px solid var(--color-acento);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 .lista-experiencia,
 .ruta-aprendizaje {
