@@ -186,3 +186,37 @@ section h2 {
     color: var(--color-acento);
     margin-bottom: 8px;
 }
+#contacto p {
+    margin-bottom: 20px;
+    color: var(--color-texto);
+}
+
+.contacto-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contacto-links a {
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    transition: opacity 0.2s;
+}
+
+.contacto-links a:hover {
+    opacity: 0.85;
+}
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+    color: var(--color-texto);
+    border-top: 1px solid var(--color-acento);
+    margin-top: 40px;
+    opacity: 0.6;
+}
