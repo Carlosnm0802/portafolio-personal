@@ -98,3 +98,11 @@ section {
     color: var(--color-acento);               /* color de acento */
     border: 2px solid var(--color-acento);    /* color de acento */
 }
+section h2 {
+    font-size: 1.75rem;          /* más grande que el texto normal, menor que h1 */
+    font-weight: 700;
+    color: var(--color-texto);
+    margin-bottom: 16px;    /* espacio entre el título y el contenido de abajo */
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-acento);  /* línea de acento debajo */
+}
