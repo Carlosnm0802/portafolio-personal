@@ -157,3 +157,32 @@ section h2 {
     background-color: var(--color-acento);
     color: var(--color-blanco);
 }
+.lista-experiencia,
+.ruta-aprendizaje {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.lista-experiencia li,
+.ruta-aprendizaje li {
+    padding: 16px;
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-acento);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.lista-experiencia h3,
+.ruta-aprendizaje h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.fecha {
+    font-size: 0.85rem;
+    color: var(--color-acento);
+    margin-bottom: 8px;
+}
