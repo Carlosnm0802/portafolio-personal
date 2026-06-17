@@ -52,7 +52,8 @@ nav a:hover {
 section {
     max-width: 800px;        /* ancho máximo del contenido, piensa 700-900 */
     margin-inline: auto;     /* centra horizontalmente */
-    padding: 20px 20px;       /* espacio arriba/abajo y a los lados */
+    padding: 20px 20px;      /* espacio arriba/abajo y a los lados */
+    scroll-margin-top: 80px;  
 }
 #hero img {
     width: 180px;           /* tamaño del círculo, piensa 150-200px */
@@ -248,4 +249,8 @@ footer {
     border-top: 1px solid var(--color-acento);
     margin-top: 40px;
     opacity: 0.6;
+}
+nav a.activo {
+    color: var(--color-acento);
+    font-weight: 600;
 }
