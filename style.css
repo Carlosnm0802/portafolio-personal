@@ -135,3 +135,25 @@ section h2 {
     margin-bottom: 12px;
     color: var(--color-texto);
 }
+.proyecto {
+    background-color: var(--color-blanco);    /* color de tarjeta */
+    border-radius: 8px;     /* esquinas redondeadas */
+    padding: 16px;           /* espacio interno */
+    margin-bottom: 24px;     /* separación entre proyectos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);          /* sombra sutil */
+}
+.proyecto-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.proyecto-links a {
+    padding: 6px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+}
