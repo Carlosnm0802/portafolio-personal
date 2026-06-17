@@ -54,3 +54,47 @@ section {
     margin-inline: auto;     /* centra horizontalmente */
     padding: 20px 20px;       /* espacio arriba/abajo y a los lados */
 }
+#hero img {
+    width: 180px;           /* tamaño del círculo, piensa 150-200px */
+    height: 180px;          /* DEBE ser igual al width para que sea círculo perfecto */
+    border-radius: 50%;     /* ¿qué valor convierte un cuadrado en círculo? */
+    object-fit: cover;      /* evita que la imagen se deforme */
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* centra horizontalmente en columna flex */
+    text-align: center;
+    padding: 60px 20px;
+    gap: 16px;              /* espacio entre foto, nombre, subtítulo y botones */
+}
+#hero h1 {
+    font-size: 2.5rem;          /* grande, piensa en 2rem o 2.5rem */
+    font-weight: 700;
+    color: var(--color-texto);
+}
+.links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.links a {
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+#hero .links a:first-child {
+    background-color: var(--color-acento);    /* color de acento */
+    color: var(--color-blanco);               /* blanco */
+}
+
+#hero .links a:last-child {
+    background-color: transparent;    /* transparente */
+    color: var(--color-acento);               /* color de acento */
+    border: 2px solid var(--color-acento);    /* color de acento */
+}
