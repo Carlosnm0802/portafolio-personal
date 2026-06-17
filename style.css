@@ -106,3 +106,32 @@ section h2 {
     padding-bottom: 8px;
     border-bottom: 2px solid var(--color-acento);  /* línea de acento debajo */
 }
+#habilidades .lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+#habilidades .lista-habilidades li {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+#habilidades .lista-habilidades:first-of-type li {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+}
+#habilidades .lista-habilidades.aprendiendo li {
+    background-color: transparent;
+    color: var(--color-acento);
+    border: 2px solid var(--color-acento);
+}
+#habilidades h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--color-texto);
+}
